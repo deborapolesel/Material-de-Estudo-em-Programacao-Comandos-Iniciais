@@ -3,27 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeiros Passos</title>
-    <style>
-        body
-        {background-color: white;
-        color: tomato;
-        font: normal 22pt arial;
-        }
-        h1
-        {color: teal;
-        }
-    </style>
+    <title>Document</title>
 </head>
 <body>
-    <h1>Olá Mundo</h1>
-    <p>Primeiro Parágrafo</p>
-    <script>
-        window.alert ('Minha primeira Mensagem');
-        window.confirm ('Está gostando de Javascript?');
-        var nome = window.prompt ('Qual é o seu nome?');
-        window.alert ('Olá, '+nome+'!');
-    </script>
+<script>
+
+var sexo = 'M';
+    if (sexo === 'M') {
+        return 'Masculino';
+    } else {return 'Feminino';
+    }
     
+//oder
+
+var sexo = 'M';
+var retorno = (sexo ==='M')? 'Masculino' : 'Feminino' // reduz a estrutura do if
+    console.log (retorno)
+
+</script>
 </body>
 </html>
