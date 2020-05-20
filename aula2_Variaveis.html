@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variaveis</title>
+</head>
+ <!--  Variáveis em Javascript
+    São uma forma para se salvar dados que possam ser acessados e/ou 
+    manipulados posteriormente, independente do tipo desses dados strings,
+    números, booleanos, arrays, objetos ou funções. São valores armazenados na memória Ram.
+    Obs: o armazenamento é temporário! -->
+
+<body>
+    <script>
+        // DECLARAÇÃO DE VARIÁVEL:
+        var canal;
+        // DECLARAÇÃO MÚLTIPLA DE VARIÁVEIS:
+        // Separadas por vírgulas e não tem valor definido. Ainda não foram inicializadas.
+        var site, entrar, numero1; 
+        //Para imprimir o valor de uma variável:
+        document.write (canal);
+
+        //Entretanto vai aparecer undefined na página porque não atribuiu um valor na variável.
+        //Ou pode-se atribuir um valor. Por exemplo:
+        var entrar = null
+        var site = "CFB Cursos"
+        var numero1 = 2020
+
+        document.write (canal);
+        document.write ('<br>'); //Adicionar o comando de quebra de linha
+        document.write (site + '<br>' + numero1);
+        document.write ('<br>');
+
+
+        //NOME DE VARIÁVEIS:
+        var Canal, site1, site_br; //nomes possíveis
+        //Não pode começar com números no início, &, nome de funções do código
+
+        //Para inserir uma variável é necessário escrever
+
+        var nome = 'Débora'
+        /*OU
+        nome = 'Débora';      -> O programa vai entender que está inserindo uma variável (NAO RECOMENDA)*/
+
+        var num1 = 2
+        var num2 = 2
+        var texto = num1 + num2  //vai somar os valores pois eles vai entender como números
+        var texto2 = nome + num1 + num2 //quando há uma string no meio ele identifica tudo como strig
+
+        document.write (texto);  //mostra a soma dos valores de num1 e num2
+        document.write ('<br>');
+
+        document.write (texto2); //mostra numero e texto concatenado
+        document.write ('<br>');
+
+        var texto3 = nome + (num1 + num2) //Mostra a string e a soma. Os parenteses auxiliam a separar
+        document.write (texto3);
+        
+    </script>
+</body>
+</html>
