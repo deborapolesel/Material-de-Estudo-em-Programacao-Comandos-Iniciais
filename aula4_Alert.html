@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixas de mensagem</title>
+</head>
+<body>
+    <script>
+    /*   CAIXA: ALERT
+        Aparece uma mensagem onde contem uma string e botão OK.
+        O alert é uma método do objeto window. Assim como write é um método de document.
+        Contudo document é obrigatório e window não. Ele só necessita de uma string.
+
+    */
+        window.alert ('Curso de Javascript')
+        //ou
+        alert ('Curso de Javascript')
+
+        var canal = 'CFB Cursos'
+        var curso = 'Curso de JS'
+        alert (canal + " - "+ curso)
+
+        alert (100) //aparece 100
+        alert (200+100) //aparece 300
+        const num = 500
+        alert (num+300) //vai somar e aparecer 800
+        const separador = " - "
+        alert (canal+separador+curso)
+        const quebralinha = "\n"    //para quebrar linha dentro do alert usa-se  "\n". 
+        //Pode colocar em qualquer lugar por exemplo: alert(canal+'\n'+curso) OU var canal = 'CFB \n'
+        //pode-se também colocar mais de um. É só repetir
+        alert (canal+quebralinha+curso)
+
+    </script>
+</body>
+</html>
