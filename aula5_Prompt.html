@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROMPT</title>
+</head>
+<body>
+    <script>
+    /*                        PROMPT
+    Atraves dele conseguimos coletar alguma informação e armazenar o conteúdo dentro de uma
+    variável. Além do texto há uma caixa de texto para a digitação com OK ou CANCEL.
+    Também é um método do window, entao, não precisar escrever window.
+    */
+    
+    prompt ('Digite seu nome');
+    var nome = prompt ('Digite o seu nome'); //Para armazenar a informação  - nome
+    var idade = prompt ('Digite a sua idade'); //Para armazenar a informação digitada - idade
+    document.write (`O seu nome é ${nome} e sua idade é ${idade}`);
+    prompt ('Coloque seu nome','digite aqui'); /*Quando coloca-se dois textos o primeiro aparece na 
+    caixa de prompt e o outro aparece no espaço a ser digitado*/
+    alert (`O seu nome é ${nome} e sua idade é ${idade}`); //colocando as informações em caixa de alert
+        
+    </script>
+</body>
+</html>
