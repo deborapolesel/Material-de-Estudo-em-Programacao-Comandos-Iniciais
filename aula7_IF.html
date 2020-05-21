@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMANDO IF</title>
+</head>
+<body>
+    <script>
+    /*                       COMANDO IF "SE"
+    Realiza um teste lógico que retorna verdadeiro ou falso. Dependendo do resultado
+    o programa realizará um bloco de comandos ou outro bloco.
+    if(teste lógico){
+    se verdadeiro bloco 1}
+    else {
+    se falso bloco 2}
+    
+    Para os testes lógicos você vai precisar dos operadores:
+    > maior             >= maior ou igual               != diferente
+    < menor             <= menor ou igual               == igual
+    && and(e)           || or(ou)                       
+    != valor diferente 
+    !== valor e tipo diferentes
+
+    */
+    var num1, num2;
+    num1 = 10;
+    num2 = 5;
+    if (num1 > num2){
+        document.write ('O número 1 é maior que o número 2<br>');
+    } 
+    
+    //se for verdadeiro o bloco será executado e se for falso não será executado
+    if(1){
+        document.write ('Você escreveu uma sentença verdadeira<br>');
+    }
+    //vai escrever true pois 1 significa true.
+
+    //     TRUE ... ELSE
+    var tx1 = 'true'
+    var tx2 = 'false'
+    if (num1 < num2){
+        document.write ('Verdade! O número 1 é maior que o número 2<br>');
+        alert (tx1)
+    } else {
+        document.write ('Falso! O número 1 é maior que o número 2<br>');
+        alert (tx2)
+    }
+    </script>
+</body>
+</html>
