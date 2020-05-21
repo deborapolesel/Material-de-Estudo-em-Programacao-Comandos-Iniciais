@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AND - OR</title>
+</head>
+<body>
+    <script>
+    /*                  AND  -  OR
+    Usado para faixas de valores para uma variável, multiplos testes para um mesmo retorno
+    dentro de um if.
+    A condição AND só vai retornar verdadeiro se todas as condições forem verdadeiras.
+    A condição OR só vai retornar falso de todas as condições forem falsas.
+
+    */
+    var ponto = prompt ('Digite quantos pontos o jogador fez')
+    //Condição de vitória no jogo: ponto>=30 && <=40  ||   >=70 && <=80
+    if(
+        ((ponto>=30)&&(ponto<=40))
+                    ||
+        ((ponto>=70)&&(ponto<=80))
+    )  {
+        document.write ('O jogador ganhou');
+    } else {
+        document.write ('O jogador perdeu')
+    }
+    </script>
+</body>
+</html>
