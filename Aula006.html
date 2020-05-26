@@ -13,27 +13,42 @@
     Para criar as colunas usa-se a tag <td>. Nesta tag também será inserido
     o valor contido dentro da tabela.
 
+    A tag <caption> insere o título da tabela.
+    Para mesclar colunas pode-se usar a propriedade: colspan e informar o número de celulas.
+    Para mesclar linhas pode-se usar a propriedade: rowspan e informar o número de celulas.
+
+
     Para a formatação de tabelas utiliza-se o CSS.
 
     -->
 <table>
+    <caption>Dados dos alunos</caption>
     <th>Nome</th>
     <th>Idade</th>
     <th>Cidade</th>
+    <th colspan="2">Cursos matriculados</th>
+    <th>Turma</th>
 <tr>
     <td>João</td>
     <td>18</td>
     <td>São Paulo</td>
+    <td>Inglês</td>
+    <td>Espanhol</td>
+    <td rowspan="3">Período manhã</td>
 </tr>
 <tr>
     <td>Maria</td>
     <td>21</td>
     <td>Campinas</td>
+    <td>Inglês</td>
+    <td>Alemão</td>
 </tr>
 <tr>
     <td>Lucas</td>
     <td>16</td>
     <td>Rio de Janeiro</td>
+    <td>Inglês</td>
+    <td>Italiano</td>
 </tr>
 </table>
 <body>
